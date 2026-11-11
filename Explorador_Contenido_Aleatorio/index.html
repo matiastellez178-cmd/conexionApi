@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#184e45">
+  <meta name="description" content="Descubre citas, perros, gatos y datos curiosos con cuatro APIs públicas.">
+  <title>Explorador de contenido aleatorio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Explorador, inicio"><span class="brand-icon" aria-hidden="true">✳</span> explorador<span class="brand-dot">.</span></a>
+    <span class="course">PROGRAMACIÓN WEB III <span>/</span> PRÁCTICA DE APIs</span>
+  </header>
+
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow"><span aria-hidden="true"></span> UN CLIC, UN NUEVO DESCUBRIMIENTO</p>
+      <h1 id="page-title">Explorador de<br>contenido <em>aleatorio.</em></h1>
+      <div class="intro-bottom">
+        <p>Una idea para pensar, una cara para sonreír y algo que no sabías.<br class="desktop-break"> Explora un poquito de todo, sin salir de aquí.</p>
+        <span class="api-count"><span aria-hidden="true">↗</span> 4 APIs públicas · infinitas sorpresas</span>
+      </div>
+    </section>
+
+    <section class="card-grid" aria-label="Contenido aleatorio">
+      <article class="card quote-card" id="quote-card" aria-labelledby="quote-title" aria-busy="false">
+        <header class="card-heading"><div><span class="category">01 / INSPÍRATE</span><h2 id="quote-title">Citas y autores</h2></div><span class="section-icon" aria-hidden="true">“</span></header>
+        <div class="content text-content" id="quote-content" hidden>
+          <figure><blockquote id="quote-text" lang="en"></blockquote><figcaption id="quote-author"></figcaption></figure>
+        </div>
+        <p class="status" id="quote-status" role="status" aria-live="polite" aria-atomic="true"></p>
+        <footer class="card-footer"><a class="source" href="https://dummyjson.com/docs/quotes" target="_blank" rel="noopener noreferrer">DummyJSON ↗</a><button id="quote-button" type="button" aria-controls="quote-content quote-status">Obtener otra cita <span aria-hidden="true">↻</span></button></footer>
+      </article>
+
+      <article class="card dog-card" id="dog-card" aria-labelledby="dog-title" aria-busy="false">
+        <header class="card-heading"><div><span class="category">02 / SONRÍE</span><h2 id="dog-title">Un buen compañero</h2></div><span class="section-icon" aria-hidden="true">♧</span></header>
+        <div class="content image-content" id="dog-content" hidden><img id="dog-image" alt="Perro aleatorio proporcionado por Dog CEO" decoding="async"></div>
+        <p class="status" id="dog-status" role="status" aria-live="polite" aria-atomic="true"></p>
+        <footer class="card-footer"><a class="source" href="https://dog.ceo/dog-api/documentation/random" target="_blank" rel="noopener noreferrer">Dog CEO ↗</a><button id="dog-button" type="button" aria-controls="dog-content dog-status">Mostrar otro perro <span aria-hidden="true">↻</span></button></footer>
+      </article>
+
+      <article class="card cat-card" id="cat-card" aria-labelledby="cat-title" aria-busy="false">
+        <header class="card-heading"><div><span class="category">03 / TÓMATE UNA PAUSA</span><h2 id="cat-title">Actitud felina</h2></div><span class="section-icon" aria-hidden="true">✧</span></header>
+        <div class="content image-content" id="cat-content" hidden><img id="cat-image" alt="Gato aleatorio proporcionado por CATAAS" decoding="async"></div>
+        <p class="status" id="cat-status" role="status" aria-live="polite" aria-atomic="true"></p>
+        <footer class="card-footer"><a class="source" href="https://cataas.com/" target="_blank" rel="noopener noreferrer">CATAAS ↗</a><button id="cat-button" type="button" aria-controls="cat-content cat-status">Mostrar otro gato <span aria-hidden="true">↻</span></button></footer>
+      </article>
+
+      <article class="card fact-card" id="fact-card" aria-labelledby="fact-title" aria-busy="false">
+        <header class="card-heading"><div><span class="category">04 / DESCUBRE</span><h2 id="fact-title">¿Sabías que…?</h2></div><span class="section-icon" aria-hidden="true">✺</span></header>
+        <div class="content text-content" id="fact-content" hidden><div><span class="fact-label">UN DATO FUERA DE LO COMÚN</span><p id="fact-text" lang="en"></p></div></div>
+        <p class="status" id="fact-status" role="status" aria-live="polite" aria-atomic="true"></p>
+        <footer class="card-footer"><a class="source" href="https://uselessfacts.jsph.pl/" target="_blank" rel="noopener noreferrer">Useless Facts ↗</a><button id="fact-button" type="button" aria-controls="fact-content fact-status">Mostrar otro dato <span aria-hidden="true">↻</span></button></footer>
+      </article>
+    </section>
+    <noscript><p class="noscript">Activa JavaScript para consultar las APIs y explorar el contenido.</p></noscript>
+  </main>
+  <footer class="site-footer"><span>Hecho para mentes curiosas.</span><span>Contenido en tiempo real <span aria-hidden="true">✳</span> HTML · CSS · JavaScript</span></footer>
+</body>
+</html>
